@@ -3,13 +3,18 @@
     src: url(fonts/Lafemme.otf);
 }
 
+@font-face {
+    font-family: Tomatoes;
+    src: url(fonts/BetterGrade-519DV.ttf);
+}
+
 body {
     background-color: rgb(214, 211, 211);
     font-family: 'Playfair Display';
 
 }
 
-h1 {
+h1{
     font-family: LaFemme;
     font-size: 70px;
     text-align: center;
@@ -18,8 +23,8 @@ h1 {
 
 #img-div {
 background-color: rgb(255, 255, 255);
-padding: 20px 20px 30px 20px;
-margin: 0 200px;
+padding: 10px 10px 20px 10px;
+margin: 0 500px;
 display: flex;
 flex-flow: column;
 justify-content: space-between;
@@ -30,10 +35,15 @@ border-radius: 2px;
 
 figcaption {
     padding-top:30px;
+    font-family: Tomatoes;
+    font-size: max(3vw, 36px);
+
 }
 #image {
     max-width: 100%;
     max-height: auto;
+    display: flex;
+    flex: 0 0 0;
 }
 
 li:not(:last-child) {
@@ -48,4 +58,16 @@ li:not(:last-child) {
 #tribute-info a:hover {
     cursor: pointer;
 
+}
+
+.description {
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
 }
